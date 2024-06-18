@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Контакты</title>
+        <link rel="stylesheet" href="./style/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script src="./public/js/app.js" defer></script>
+        <script src="./public/js/reg.js" defer></script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Freeman&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+          rel="stylesheet" />
+    </head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>	
+    <header>
+		<nav>
+        <span class="left_head">
+          <h1>Рыболовное и <br> рыбообрабатывающее <br> предприятие</h1> 
+          <a href="/index.html"><img class="icon_head" src="./public/img/1687994638_sneg-top-p-riba-ava-instagram-30.png"width=75 alt=""></a>
+        </span>
+			<span>
+				<a href="./index_register.html">Главная</a>
+				<a href="./faq.html">О Компании</a>
+                <a href="/news.html">Новости</a>
+                <a href="./otziv.html">Отзывы</a>   
+            </span>  
+            <div class="toggle_btn">
+                <ion-icon name="list-outline"></ion-icon> 
+            </div>
+		</nav>
+        <div class="dropmenu">
+            <ul>
+				<li> <a href="./index_register.html">Главная</a></li>
+				<li><a href="./faq.html">О Компании</a></li>
+                <li><a href="/news.html">Новости</a></li>
+                <li><a href="./otziv.html">Отзывы</a></li>
+                
+            </ul>
+        </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const dropmenu = document.querySelector('.dropmenu')
+    
+            toggleBtn.onclick = function(){
+                dropmenu.classList.toggle ('open')
+                const isOpen = dropmenu.classList.contains('open')
+            }
+        </script>
+	</header>
+    <main>
+        <div class="pamel_singl" style="
+        background-image: url(./public/img/1614401843_2-p-riba-na-temnom-fone-2.jpg);">
+            <h1 class="tit_panel">КОН<span>ТАКТЫ</span></h1>
+        </div>
+        <div class="cont_cont">
+            <div class="item_cont">
+                <h1>ОТДЕЛ ПРОДАЖ</h1>
+                <p>Оптовые продажи, работа c сетями</p>
+                <span>______________</span>
+                <h2>s.molodtsova@petrotral.ru
+                  <br> +7-921-915-75-44</h2>
+            </div>
+            <div class="item_cont">
+                <h1>ОТДЕЛ МАРКЕТИНГА</h1>
+                <p>Сотрудничество, кросс-промо</p>
+                <span>______________</span>
+                <h2>s.molodtsova@petrotral.ru
+                  <br> +7-921-915-75-44</h2>
+            </div>
+            <div class="item_cont">
+                <h1>ОТДЕЛ CНАБЖЕНИЯ</h1>
+                <p>Качество закупок, замороженная рыба</p>
+                <span>______________</span>
+                <h2>s.molodtsova@petrotral.ru
+                  <br> +7-921-915-75-44</h2>
+            </div>
+            <div class="item_cont">
+                <h1>ОТДЕЛ КАЧЕСТВА</h1>
+                <p>Качество продукции, выкладки</p>
+                <span>______________</span>
+                <h2>s.molodtsova@petrotral.ru
+                  <br> +7-921-915-75-44</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="up_footer">
+          <div class="nav_logo"></div>
+          <div class="nav_menu_footer">
+            <div class="lists">
+              <ul>
+                <label class="glob">Навигация</label>
+                <li><a href=" #">Продукция</a></li>
+                <li><a href="#">О Компании</a></li>
+                <li><a href="# "></a>Новости</li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <ul>
+                <label class="glob">Партнерам</label>
+                <li><a href=" #">Наши парнетры</a></li>
+                <li><a href=" #">Заказ на переобработку</a></li>
+              </ul>
+              <ul>
+                <label class="glob">Контакты</label>
+                <li>Телефон: 7 (812) 200-45-87</li>
+                <li>Mail : info@astraBod.ru</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
