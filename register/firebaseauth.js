@@ -47,7 +47,7 @@
         const docRef=doc(db, "users", user.uid);
         setDoc(docRef,userData)
         .then(()=>{
-            window.location.href='/index_register.html';
+            window.location.href='./index_register.html';
         })
         .catch((error)=>{
             console.error("error writing document", error);
@@ -77,7 +77,7 @@
         showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        window.location.href='/index_register.html';
+        window.location.href='./index_register.html';
     })
     .catch((error)=>{
         const errorCode=error.code;
